@@ -14,5 +14,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+	Plug 'joshdick/onedark.vim'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'leafgarland/typescript-vim'
+	Plug 'peitalin/vim-jsx-typescript'
+	Plug 'scrooloose/nerdtree'
+  	Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
