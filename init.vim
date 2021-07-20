@@ -16,7 +16,7 @@ set shiftwidth=3
 set expandtab
 set noshowmode
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
-
+set noswapfile
 "Node Support
 let g:node_host_proge=expand("/usr/bin/node")
 
