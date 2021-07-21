@@ -47,7 +47,7 @@ let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_rigth_sep=''
 let g:airline_theme = 'base16_gruvbox_dark_hard'
-
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 "theme_settings
 set termguicolors     " enable true colors support
 let ayucolor="dark"   " for dark version of theme
