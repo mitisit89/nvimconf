@@ -1,7 +1,7 @@
 "General_conf
 let g:mapleader = "\<Space>"
 set nocompatible
-filetype indent on
+filetype indent plugin on
 syntax enable
 set guicursor=
 set nowrap
@@ -11,8 +11,12 @@ set nobackup
 set nowritebackup
 set splitbelow
 set splitright
-set tabstop=3
-set shiftwidth=3
+set tabstop=2                           " Insert 2 spaces for a tab
+set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set expandtab                           " Converts tabs to spaces
+set smartindent                         " Makes indenting smart
+set autoindent       
 set expandtab
 set noshowmode
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
@@ -39,13 +43,13 @@ call plug#end()
 
 "Airline_config
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep =  ' '
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = '|'
+
 let g:airline_powerline_fonts=1
-let g:airline_left_sep=''
-let g:airline_rigth_sep=''
+
 let g:airline_theme = 'base16_gruvbox_dark_hard'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 "theme_settings
@@ -91,7 +95,7 @@ let g:coc_explorer_global_presets = {
 nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 "Keys_binds
 nnoremap <M-J>   :resize -2<CR>
 nnoremap <M-j>    :resize -2<CR>
