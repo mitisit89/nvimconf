@@ -39,7 +39,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
    Plug 'honza/vim-snippets'
 	Plug 'jiangmiao/auto-pairs'
 Plug 'kyazdani42/nvim-tree.lua'
-
+Plug 'mhinz/vim-startify'
 	
 call plug#end()
 

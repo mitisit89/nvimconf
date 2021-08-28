@@ -8,8 +8,8 @@
     "vue",
     "python",
     "go",
-    "rust",
+    "rust"
   ],
 
-  "suggest.noselect": false,
+  "suggest.noselect": false
   }
